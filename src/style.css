@@ -122,12 +122,14 @@ body {
 }
 .content{
     padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
 }
 .profile-container{
     border-bottom: 1px solid #9F9F9F;
     padding-bottom: 10px;
-    margin-bottom: 20px;
 }
 .profile-container h1{
     font-family: 'Anton', sans-serif;
@@ -135,4 +137,44 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     line-height: 100%;
+}
+.profile-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.profile-text p{
+    font-family: 'Gotham', sans-serif;
+    font-size: 10px;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 5px;
+    letter-spacing: 0px;
+    color: #292929;
+}
+.skill-container{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #292929;
+    text-transform: none;
+    max-width: 100%;
+    width: 70px ;
+    height: 70px ;
+}
+.skill span{
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 400;
 }
