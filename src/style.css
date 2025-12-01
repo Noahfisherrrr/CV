@@ -4,12 +4,18 @@
     margin: 0;
 }
 :root {
-    --primary-color: #44787d;
     --background: #f4f4f4;
     --text: #292929;
     --border: #9F9F9F;
     --vector-bg: #000000;
 }
+[data-theme="dark"] {
+    --background: #292929;
+    --text: #FFFFFF;
+    --border: #F4EFFD;
+    --vector-bg: #FFFFFF;
+}
+
 body {
     background-color: var(--background);
     margin: 0 auto;
@@ -22,6 +28,7 @@ body {
     display: flex;
     justify-content: center;
     border-bottom:1px solid var(--border) ;
+    position: relative;
 }
 .banner-content {
     display: flex;
@@ -66,6 +73,20 @@ body {
     line-height: 100%;
     color: var(--text);
 }
+
+.toggle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--text);
+    max-width: 100%;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
 .bio {
     max-width: 100%;
     gap: 0px;
@@ -109,6 +130,7 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     line-height: 100%;
+    color: var(--text);
 }
 .info-container h2{
     font-family: 'Gotham', sans-serif;
@@ -118,6 +140,7 @@ body {
     line-height: 100%;
     margin-bottom: 5px;
     letter-spacing: 0px;
+    color: var(--text);
 }
 .info-container p{
     font-family: 'Gotham', sans-serif;
@@ -127,6 +150,7 @@ body {
     line-height: 100%;
     margin-top: 5px;
     letter-spacing: 0px;
+    color: var(--text);
 }
 .content{
     padding: 20px 40px;
@@ -145,12 +169,14 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     line-height: 100%;
+    color: var(--text);
 }
 .profile-text{
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    color: var(--text);
 }
 .profile-text p{
     font-family: 'Gotham', sans-serif;
@@ -187,6 +213,7 @@ body {
     font-size: 16px;
     text-transform: none;
     font-weight: 400;
+    color: var(--text);
 }
 .skill{
     display: flex;
@@ -216,6 +243,7 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     line-height: 100%;
+    color: var(--text);
 }
 .vector-path{
     display: flex;
@@ -246,6 +274,7 @@ body {
     font-weight: 700;
     letter-spacing: 0%;
     margin:0 5px;
+    
 }
 .work-details{
     display: flex;
@@ -265,6 +294,7 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     line-height: 100%;
+    color: var(--text);
 }
 .work-item h3{
     font-family: 'Gotham', sans-serif;
