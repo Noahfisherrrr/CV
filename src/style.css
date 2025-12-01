@@ -193,9 +193,15 @@ body {
     position: absolute;
 
 }
+.work{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
 .work-container{
     border-bottom: 1px solid #9F9F9F;
     padding-bottom: 10px;
+    
 }
 .work-container h1{
     font-family: 'Anton', sans-serif;
@@ -204,12 +210,16 @@ body {
     font-weight: 400;
     line-height: 100%;
 }
+.vector-path{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 .exp{
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    margin-top: 10px;
 }
 .vector {
     width: 100%;
@@ -219,15 +229,42 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #000000;
-    padding: 5px;
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%,0% 100%, 25% 50%, 0% 0%);   
+    padding: 4px;
+    clip-path: polygon(80% 0%, 100% 50%, 80% 100%,0% 100%, 20% 50%, 0% 0%);   
 }
 
 .vector span {
     color: #ffffff;
     font-family: 'Gotham', sans-serif;
     font-size: 10px;
+    line-height: 90%;
+    font-weight: 700;
+    letter-spacing: 0%;
 }
-
-
-
+.work-details{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    border-left: 1px solid #9F9F9F;
+}
+.work-item{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-left: 10px;
+}
+.work-item h2{
+    font-family: 'Anton', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 100%;
+}
+.work-item h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 10px;
+    text-transform: none;
+    font-weight: 300;
+    line-height: 100%;
+    color: #555;
+}
