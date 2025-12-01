@@ -7,7 +7,7 @@ const animateCircle = (speedometer) => {
 
   const interval = setInterval(() => {
     current += 3.6; 
-    speedometer.style.background = `conic-gradient(#44787d ${current - 90}deg, #e2d2d2ff ${current - 90}deg)`;
+    speedometer.style.background = `conic-gradient(from 0deg, #44787d 0deg ${current - 90}deg, #e2d2d2ff ${current - 90}deg)`;
     
     if (current >= target) {
       clearInterval(interval);
@@ -17,8 +17,7 @@ const animateCircle = (speedometer) => {
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-      entry.target.classList.add('animated');
+    if (entry.isIntersecting ) {
       animateCircle(entry.target);
     }
   });
