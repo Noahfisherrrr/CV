@@ -223,8 +223,6 @@ body {
 }
 .vector {
     width: 100%;
-    max-width: 48px;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,6 +238,7 @@ body {
     line-height: 90%;
     font-weight: 700;
     letter-spacing: 0%;
+    margin:0 5px;
 }
 .work-details{
     display: flex;
