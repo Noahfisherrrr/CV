@@ -161,16 +161,18 @@ body {
     width: 100%;
     justify-content: center;
 }
-.skill {
+.skill-range {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid #292929;
     text-transform: none;
     max-width: 100%;
     width: 70px ;
     height: 70px ;
+    background: conic-gradient(#44787d 0deg, #f4f4f4 0deg);
+    transition: 2s ease;
+    position: relative;
 }
 .skill span{
     font-family: 'Anton', sans-serif;
@@ -178,3 +180,17 @@ body {
     text-transform: none;
     font-weight: 400;
 }
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    border: 0.2px solid #29292941;
+    position: absolute;
+
+}
+
